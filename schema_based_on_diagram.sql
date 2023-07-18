@@ -1,19 +1,18 @@
--- CREATE TABLE patients (
---   id integer GENERATED ALWAYS AS IDENTITY,
---   name varchar,
---   date_of_birth date,
---   PRIMARY KEY(id)
--- );
+CREATE TABLE patients (
+  id integer GENERATED ALWAYS AS IDENTITY,
+  name varchar,
+  date_of_birth date,
+  PRIMARY KEY(id)
+);
 
--- CREATE TABLE invoices (
---   id integer GENERATED ALWAYS AS IDENTITY,
---   total_amount decimal,
---   generated_at timestamp,
---   payed_at timestamp,
---   medical_history_id integer,
---   PRIMARY KEY(id)
--- );
-
+CREATE TABLE invoices (
+  id integer GENERATED ALWAYS AS IDENTITY,
+  total_amount decimal,
+  generated_at timestamp,
+  payed_at timestamp,
+  medical_history_id integer,
+  PRIMARY KEY(id)
+);
 
 CREATE TABLE medical_history (
   id integer GENERATED ALWAYS AS IDENTITY,
